@@ -1,0 +1,26 @@
+/*
+    isso eh um seletor de tag - serve para qualquer tag existente
+*/
+p{
+    color: #f50155;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+/*
+    isso eh uma classe - serve para definir estilos para coisas muito especificas, 
+    ela sobrescreve o que o seletor de tags faz
+*/
+.paragrafoVerde{
+    color: chartreuse;
+}
+
+/*
+    isso eh um ID - eh usado somente quendo vai utilizar estilizacoes uma unica vez.
+*/
+#corpo {
+    background: cornflowerblue;
+}

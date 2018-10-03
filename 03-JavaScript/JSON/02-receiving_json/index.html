@@ -1,0 +1,18 @@
+<ul id="users">    
+</ul>
+
+<script>    
+    var tJSON = '[{"nome":"joao","idade":20,"cidade":["sao paulo","santa catarina","rio de janeiro"]},{"nome":"maria","idade":40,"cidade":["sao paulo","santa catarina","rio de janeiro"]},{"nome":"jessica","idade":35,"cidade":["sao paulo","santa catarina","rio de janeiro"]}]';
+    /*
+        a diferenca do sending eh que aqui o Json eh uma string transformada em obj
+    */
+
+    var Obj = JSON.parse(tJSON);
+
+    var i;
+    var text = "";
+    for( i = 0; i < Obj.length; i++){
+        text += '<li id='+i+'>' + Obj[i].nome + ', ' + Obj[i].idade + ',' + Obj[i].cidade + '</li>';
+    }
+    document.getElementById("users").innerHTML = text;
+</script>

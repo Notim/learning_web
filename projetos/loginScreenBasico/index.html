@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Login page</title>
+        <style>
+            .box-login{
+                width:250px;
+                padding: 5px;
+                border: #aaaaaa solid 1px;
+                background-color: #cccccc;
+            }
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    </head>
+    <body>
+        <form method="POST" action="login.php">
+            <div class="box-login">
+                <div><strong>Nome:</strong></div>
+                <div><input type="username" name="user"/></div>
+                <div><strong>Password:</strong></div>
+                <div><input type="password" name="password"/></div>                
+                <div><input type="submit" value="Login"/></div>
+            </div>
+        </form>
+    </body>
+</html>

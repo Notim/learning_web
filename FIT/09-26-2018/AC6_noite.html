@@ -1,0 +1,121 @@
+#navegador utilizado: Opera; joao vitor paulino martins ra1801021.
+#
+
+from IPython.display import display, HTML, Javascript
+
+html ='''
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>AC 5</title>
+
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta charset="utf-8" />
+
+    <script>
+
+        function verificaNomes(nome) {
+
+            if (nome.length <= 1){
+                alert("Nome não é valido.");
+                console.log("invalido.");
+                return false;
+            }
+
+            alert("Nome OK.");
+            console.log("Nome OK.");
+            return true;
+        }
+
+        function verificaEscola(escola) {
+
+            var listaEscolas = ["esc1", "esc2", "esc3", "esc4"];
+            var esc = true;
+
+            for (i = 0; i < listaEscolas.length; i++) {
+
+                if (escola == listaEscolas[i]) {
+
+                    alert("Escola ok");
+                    console.log("Escola ok");
+                    return true
+                }
+            }
+
+            alert("Escola não está na lista");
+            console.log("Escola não está na lista");
+            return false;
+
+        }
+
+        function verificaIdade(idade) {
+            var ano = 2018;
+            var nascEm = 0;
+
+            console.log();
+
+            if (isNaN(idade) || idade == "" ){
+                alert("Digite um numero");
+                console.log("Digite um numero");
+                return false;
+            }
+
+            var valIdade = Number(idade);
+
+            if (idade < 0) {
+                alert("Não nasceu");
+                console.log("Não nasceu");
+                return false;
+            }
+
+            if (idade > 120) {
+                alert("Já morreu");
+                console.log("Já morreu");
+                return false;
+            }
+
+            nascEm = ano - valIdade;
+
+            alert("Você nasceu em " + nascEm);
+            console.log("Você nasceu em " + nascEm);
+            return true;
+
+        }
+
+        function enviar() {
+            console.log('entrou')
+            var nome = document.getElementById('nome').value;
+            var escola = document.getElementById('escola').value;
+            var idade = document.getElementById('idade').value;
+            
+            console.log(nome)
+            console.log(escola)
+            console.log(idade)
+
+            verificaNomes(nome);
+            verificaEscola(escola);
+            verificaIdade(idade);
+
+        }
+    </script>
+
+</head>
+
+    <body>
+        <label for="nome">Nome</label> <br>
+        <input type="text" id="nome"> <br>
+
+        <label for="escola">Escola</label> <br>
+        <input type="text" id="escola"> <br>
+
+        <label for="idade">Idade</label> <br>
+        <input type="text" id="idade"> <br>
+
+        <input  onclick='javascript: return enviar()' type="button" value="Enviar" >
+    </body>
+
+</html>
+'''
+display(HTML(html))

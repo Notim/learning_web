@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>bootstrap page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+      .container{
+          margin-top: 50px;
+      }
+      .topo {
+        background-image: url('source/imagens/tpo.jpg');
+        background-size: cover;
+        background-position: center;
+        color:cornsilk;
+      }
+
+    </style>
+
+  </head>
+
+
+  <div id="status" style="z-index:99999; margin-bottom:0px;" class=" alert alert-success alert-dismissible fade show sticky-top">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <p style="margin:0px" id='msgStatus'></p>
+  </div>
+  <script>
+    document.getElementById('status').style.display = 'none';
+
+    function showStatus(){
+      document.getElementById('msgStatus').innerHTML = '<strong>Sucesso!</strong> O feedback foi enviado.';
+      document.getElementById('status').style.display = 'block';
+    }
+  </script>
+
+
+
+  <body>
+    <div class="topo jumbotron jumbotron-fluid" style="margin-bottom:0px;">
+      <div class="container">
+        <h1>Exemplo de bootstrap</h1>
+        <p>este aqui eh nosso topo</p>
+      </div>
+    </div>
+    <!--menu de navegacao-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+      <a class="navbar-brand" href="#">
+        <img style="width:70px;" src="source\imagens\icone-eder-prado-1024x898.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Fim do menu de navegacao-->
+
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-12 col-lg-9">
+          <div class="container">
+            <h2>Conteudo dentro das sanfonas</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header">
+                  <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    missao
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    visao
+                  </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                    Valores
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <h3>Tipos de botoes</h3>
+            <button type="button" class="btn">Botao comum</button>
+            <button type="button" class="btn btn-primary active">Botao primario</button>
+            <button type="button" class="btn btn-primary" disabled>botao desabilitado</button>
+          </div>
+          <div class="container">
+            <h2>MENSAGENS DE ALERTA</h2>
+            <p>Isso e perfeito para apresentar erro nos formularios!!</p>
+            <div class="alert alert-success">
+              <strong>Email Ok!</strong>
+            </div>
+            <div class="alert alert-warning">
+              <strong>Cuidado!</strong> Senha muito pequena</a>.
+            </div>
+            <div class="alert alert-danger">
+              <strong>Algo de errado!</strong> voce pode <a href=""data-toggle="collapse" data-target="#erro" class="alert-link">clicar aqui para saber mais</a>.
+              <div id="erro" class="collapse">
+                Erro no banco de dados os valores ja existem.
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <h3>Mande-nos um feedback!</h3>
+            <div class="form-group">
+              <label for="pwd">Email:</label>
+              <input type="text" class="form-control" placeholder="Digite seu email" id="txtEmail" onkeyup="showEmailSpam()">
+            </div>
+
+            <div id='alertEmail'class="alert alert-danger">
+              <strong id='msgAlertEmail'></strong>.
+            </div>
+
+            <script>
+              document.getElementById('alertEmail').style.display =  'none';
+
+              function showEmailSpam(){
+                document.getElementById('alertEmail').style.display =  'block';
+                var sEmail	= document.getElementById('txtEmail').value;
+
+                // filtros
+                var emailFilter=/^.+@.+\..{2,}$/;
+                var illegalChars= /[\(\)\<\>\,\;\:\\\/\'\[\]]/;
+                if(!(emailFilter.test(sEmail))||sEmail.match(illegalChars)){
+                    document.getElementById('msgAlertEmail').innerHTML = 'Email em formato inviavel';
+                    document.getElementById('alertEmail').classList.remove('alert-success');
+                    document.getElementById('alertEmail').classList.add('alert-danger');
+                }else{
+                    document.getElementById('msgAlertEmail').innerHTML = 'Email OK!';
+                    document.getElementById('alertEmail').classList.remove('alert-danger');
+                    document.getElementById('alertEmail').classList.add('alert-success');
+                }
+              }
+            </script>
+            <div class="form-group">
+              <label for="Comentario">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <button onclick='showStatus()' type="button" class="btn btn-primary active">Enviar</button>
+          </div>
+          <div class="container">
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-3">
+          <div class="container">
+            <div class="row">
+              <div class="card col-lg-12 col-6" style="width:100%">
+                <img class="card-img-top" src="source\imagens\santander capa.jpg" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Contas de diversos lugares</h4>
+                  <p class="card-text">segunda via de contas</p>
+                  <a href="#" class="btn btn-primary">veja mais</a>
+                </div>
+              </div>
+              <div class="card col-lg-12 col-6" style="width:100%;margin-top:10px;">
+                <img class="card-img-top" src="source\imagens\impressora-brother.jpg" alt="Card image">
+
+                <div class="card-body">
+                  <h4 class="card-title">Brother MFC8080</h4>
+                  <p class="card-text">Maquina multifuncional pronta para a jornada de trabalho</p>
+                  <a href="#" class="btn btn-primary">Leia Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="jumbotron text-left" style="border-radius:0px;background-color:#2D2D2D;color:white;margin-bottom:0">
+      <div class="container-fluid" >
+
+        <div class="row">
+          <div class="col-lg-8 col-6">
+              <h3>Footer</h3>
+              <p>Os melhores bancos e certificados estao conosco</p>
+          </div>
+          <div class="col-lg-4 col-6">
+            <p>Siga nos nas redes sociais:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

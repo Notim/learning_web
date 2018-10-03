@@ -1,0 +1,38 @@
+<script src="../../../lib/jquery/v3.3/dist/jquery.min.js"></script>
+
+<script>        
+    (function(){                    
+        init()
+
+        function init() {
+            loadJSON(
+                "itens-femininos.json"
+                , function(response) {        
+                    var array = JSON.parse(response)
+                    array.forEach(
+                    function(entry) {
+                            console.log(entry) 
+                            var textItem = entry.id + "<a href=" + entry.link + ">" + entry.link + "</a>"
+                            document.getElementById("list_render").innerHTML += "<li>" + textItem + "</li>"
+
+                        }
+                    );          
+                }
+            );
+        }
+        function loadJSON(url, callback) {   
+            var xobj = new XMLHttpRequest()
+            xobj.overrideMimeType("application/json")
+            xobj.open('GET', url, true)
+            xobj.onreadystatechange = function () {
+                if (xobj.readyState == 4 && xobj.status == "200") {
+                
+                    callback(xobj.responseText)
+                }
+            };
+            xobj.send(null)
+        }
+    })()    
+</script>
+<ul id="list_render">
+</ul>

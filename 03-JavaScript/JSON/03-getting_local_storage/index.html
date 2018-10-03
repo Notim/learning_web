@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON teste</title>
+    </head>
+    <body>
+        <p>BEM VINDO <span ID="name-client"></span></p>
+        <p>Voce tem <span ID="age-client"></span> anos?</p>
+        <p>voce eh da cidade de <span ID="city-client">?</span></p>
+        <script>
+            var Obj = { 
+                "nome":"joao"
+                ,"idade": 30
+                ,"cidade":["sao paulo","belo horizonte","santa catarina"] 
+            }; //criando uma Obj tupla
+
+            var mJSON = JSON.stringify(Obj);//convertendo o obj para JSON
+            window.localStorage.setItem("testJSON", mJSON);//salvando em propriedade externa
+            
+            textJson = window.localStorage.getItem("testJSON");//coletando a string do arquivo json
+            pessoa = JSON.parse(textJson);//criando um obj com os itens da tupla da string
+            
+            document.getElementById("name-client").innerHTML = pessoa.nome;//apresentando o nome usuario
+            document.getElementById("age-client").innerHTML  = pessoa.idade;//apresentando a idade do usuario
+            document.getElementById("city-client").innerHTML = pessoa.cidade[0];//colocando o valor da primeira posicao do vetor cidade
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Forms mais</title>
+    </head>
+    <body>
+        <p>Cadastre-se:</p>
+        <form>
+            <p><strong>NOME: </strong><input type="text" name="user"/></p>
+            <p><strong>SENHA: </strong><input type="password" name="password"/></p>
+            <p>
+                <strong>SEXO: </strong>
+                <input type="radio" name="sex" value="female"/>Feminino
+                <input type="radio" name="sex" value="male"/>Masculino
+            </p>
+            <p>
+                <strong>INTERESSES</strong></br>
+                <input type="checkbox" name="interesses" value="futebol"/>futebol</br>
+                <input type="checkbox" name="interesses" value="voley"/>voley</br>
+                <input type="checkbox" name="interesses" value="basket"/>basket</br>
+            </p>
+            <p>
+                <strong>ESTADO</strong>
+                <select name="estado">
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                    <option value="MS">MS</option>
+                    <option value="RE">RE</option>
+                    <option value="PR">PR</option>
+                </select>
+            </p>
+            <p>
+                <strong>OBS?</strong></br>
+                <textarea>DEGITE AQUI!!</textarea>
+            </p>
+
+            <input type="submit" name="send" value="CADASTRAR" />
+        </form>
+    </body>
+</html>

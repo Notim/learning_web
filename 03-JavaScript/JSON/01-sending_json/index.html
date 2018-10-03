@@ -1,0 +1,26 @@
+<!--tranformando um Obj em JSON-->
+<div id="rec"></div>
+<script>
+    var Obj = [
+        { 
+            nome:"joao"
+            ,idade:20 
+            ,cidade:["sao paulo","santa catarina","rio de janeiro"] //array com as cidades
+        }
+        ,{ 
+            nome:"joao"
+            ,idade:20 
+            ,cidade:["sao paulo","santa catarina","rio de janeiro"] //array com as cidades
+        }
+        ,{ 
+            nome:"joao"
+            ,idade:20 
+            ,cidade:["sao paulo","santa catarina","rio de janeiro"] //array com as cidades
+        }
+    ];
+    /*
+      array de Objs em javascript
+    */
+    var tJSON = JSON.stringify(Obj);//transformando os dados do Obj num JSON(string)
+    document.getElementById('rec').innerHTML = tJSON
+</script>

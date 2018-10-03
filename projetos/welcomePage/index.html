@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Notim_::profile();</title>
+        <link rel="stylesheet" type="text/css" href="assets/fonts/Ubuntu/Ubuntu.css" />
+        <link rel="stylesheet" type="text/css" href="assets/fonts/Visitor/Visitor.css" />
+        <link rel="stylesheet" type="text/css" href="assets/fonts/Hellovetica/Hellovetica.css" />
+        
+        
+        <style>
+            *{
+                font-family:  Hellovetica, Helvetica, sans-serif;                
+            }
+            a{
+               text-decoration: none; 
+            }
+            a:hover::after {
+                content: "_"; /* Insert content that looks like bullets */
+                animation: blinker 750ms infinite;
+            }
+            body {
+                box-sizing: border-box;
+                padding: 0px;
+                margin: 0px;
+                background-color: #0c0c0c;
+                color: forestgreen; 
+            }
+            h1{
+                font-weight: bold;
+            }
+            h2{
+                font-style: italic;
+            }
+            h3{
+                font-weight: bold;
+                font-style: italic;
+            }
+            pre{
+                font-family: Ubuntu-Mono;
+            }
+            pre.terminalLinux{
+                font-family: Ubuntu-Mono;
+                font-weight: bold !important ;
+                font-size: 14px;      
+                padding: 5px;
+                color:rgb(127, 197, 62);
+                height: 200px;
+                width: 100%;
+                background-color: rgb(39, 7, 30);
+            }
+            pre.terminalLinux > .root{   
+                color:rgb(127, 197, 62);
+            }             
+            pre.terminalLinux > .path{   
+                color:rgb(107, 142, 184);
+            } 
+            pre.terminalLinux > .command{   
+                color:rgb(245, 251, 255);
+            }           
+            
+            pre.powerShell{
+                font-family: "Lucida Console";
+                font-size: 14px;      
+                padding: 5px;
+                color:rgb(237, 238, 240);
+                height: 200px;
+                width: 100%;
+                background-color: rgb(1, 33, 86);
+            }            
+            .terminalCursor {
+                animation: blinker 750ms infinite;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a>Profile</a>
+            </div>
+            <div>
+                <a>Projects</a>
+            </div>
+            <div>
+                <a>Posts</a>
+            </div>
+        </nav>
+        <h1><a>NOTIM</a></h1>
+        <p>Olá teste para ver se a fonte comum funciona.</p>
+        <a href="#" >Código em GoLang</a>
+
+        <!--<label>Terminal linux:</label>
+<pre class="terminalLinux">
+<span class="root">any@ubuntu:</span> <span class="path">~/Desktop/text</span><span class="command">$ ls <span class='terminalCursor'> | </span></span>
+</pre>-->  
+        
+
+<!--<label>PowerShell windows:</label>
+        <pre class="powerShell">
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+                
+PS C:\Users\joao vitor paulino><span class='terminalCursor'> _ </span>
+        </pre> --> 
+
+    </body>       
+</html>

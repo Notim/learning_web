@@ -1,0 +1,22 @@
+.jumbotron{
+  background-color: #625854;
+  color:#BEBEBE;
+  margin-bottom:0px;
+  border-radius: 0px;
+}
+.container{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.devper{
+  background-color:#303231;
+  color:#CFCFCF;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+.alert > p{
+  margin: 0px;
+}
+.alert{
+  margin-top: 10px;
+}

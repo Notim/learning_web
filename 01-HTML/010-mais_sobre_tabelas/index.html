@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tabelas</title>
+        <meta charset="utf-8" />
+        <style>
+            table, tr, td {
+                border:1px;
+                border-style:dotted;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Compra</h1>
+        <table width="100%">
+            <tr>
+                <th>Cod</th>
+                <th>name</th>
+                <th>number</th>
+                <th>value uni</th>
+                <th>total</th>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>soap</td>
+                <td>1</td>
+                <td>USD 2.99</td>
+                <td>USD 2.99</td>
+            </tr>
+            <tr>
+                <td>0045</td>
+                <td>rice</td>
+                <td>2</td>
+                <td>USD 7.99</td>
+                <td>USD 15.98</td>
+            </tr>
+            <tr>
+                <td>0012</td>
+                <td>beans</td>
+                <td>3</td>
+                <td>USD 1.99</td>
+                <td>USD 4.97</td>
+            </tr>
+            <tr>                
+                <td rowspan="2"><strong>Descount:</strong></td>
+                <td>Coupom</td>
+                <td colspan="2">Data: 20-12-2018</td>
+                <td>-USD 10.00</td>
+            </tr>
+            <tr>                
+                <td>Offer</td>
+                <td colspan="2">Data: 04-12-2018</td>
+                <td>-USD 14.00</td>
+            </tr>
+            <tr>
+                <td colspan="2"><em><strong>TOTAL:</strong></em></td>
+                <td colspan="2"><em>USD 23.64 - 24.00</em></td>
+                <td><em><strong>USD 0.36</strong></em></td>
+            </tr>
+        </table>
+    </body>
+</html>

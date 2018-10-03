@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="libs\jquery_v3.3.1.js"></script>
+    <link href="libs\bootstrap4.1.1\css\bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <!--Status msg-->
+    <div id="statusSpan" style="z-index:99999; margin-bottom:0px;" class=" alert alert-success alert-dismissible fade show sticky-top">
+      <button type="button" class="close" onclick="hideStatusSpan()">&times;</button>
+      <p style="margin:0px" id='msgStatusSpan'></p>
+    </div>
+    <!--fim status-->
+
+    <!--topo-->
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Site em construcao</h1>
+        <p>Ola, em breve o site ficara concluido!!</p>
+      </div>
+    </header>
+    <!--Fim topo-->
+
+    <!--main-->
+    <main class="container">
+      <!--linha de tabela dentro do main-->
+      <section class="row">
+        <!--coluna de artigos da linha row-->
+        <article class="col-lg-8 col-12">
+          <div>
+            <h1>Cadastro em nosso site</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <formulario>
+            <div class="form-group">
+              <label for="pwd">Nome:</label>
+              <input type="text" class="form-control" placeholder="Digite seu Nome" id="txtNome">
+              <div id='alertNome' class="alert">
+                <p id='msgAlertNome'></p>
+              </div>
+            </div>
+
+
+
+            <div class="form-group">
+              <label for="pwd">Email:</label>
+              <input type="text" class="form-control" placeholder="Digite seu email" id="txtEmail">
+              <div id='alertEmail'class="alert">
+                <p id='msgAlertEmail'></p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">Senha:</label>
+              <input type="password" class="form-control" placeholder="Digite sua senha" id="txtSenha">
+              <div id='alertSenha'class="alert">
+                <p id='msgAlertSenha'></p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">Verificacao de Senha:</label>
+              <input type="password" class="form-control" placeholder="Digite sua senha de novo" id="txtVerifSenha">
+              <div id='alertVerifSenha'class="alert">
+                <p id='msgAlertVerifSenha'></p>
+              </div>
+            </div>
+
+            <button id="sendData" class="btn">Enviar</button>
+          </formulario>
+        </article>
+
+        <!--coluna de aside da linha row-->
+        <aside class="col-lg-4 col-12">
+
+            secao para colocar anuncios ou mapa do site e ultimas noticias
+
+        </aside>
+      </section>
+    </main>
+    <!--Fim main-->
+    <Footer class="jumbotron">
+      <section class="row">
+        <article class="col-lg-8 col-12">
+          <p>secao para colocar parceiros e badges de seguranca</p>
+        </article>
+        <aside class="col-lg-4 col-12">
+          <p>curta-nos nas redes sociais</p>
+        </aside>
+      </section>
+    </footer>
+    <footer class="devper container-fluid">
+      <p style="margin-bottom:0px;">Desenvolvido por <a href="mailto:paulino.joaovitor@yahoo.com.br">joao vitor</a></p>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="Load.js"></script>
+  <script type="text/javascript" src="validation.js"></script>
+
+</html>

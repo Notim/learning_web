@@ -1,0 +1,57 @@
+<script src="lib/jquery.min.js"></script>
+<script src="script.js"></script>
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    p{
+        padding: 0px;
+        margin: 3px;
+
+    }
+    .login-box{
+        background-color:darkgray;
+        border: #333 solid 1px; 
+        width:30%;
+        padding: 5px;
+        border-radius: 2px;
+    }
+    .login-box > *{
+        width: 100%;        
+    }
+    input{
+        height: 30px;
+        border: #ccc 1px solid;
+        border-radius: 2px;
+        padding: 2px;
+    }
+    button{
+        margin-top: 5px;
+        height: 30px;
+        border: #ccc 1px solid;
+        border-radius: 2px;
+    }
+    #result {
+        width: 100%;
+        color:#ffffff;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div id="result"></div>
+    <div class="login-box">
+        <p>Nome Completo: </p>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"/>
+        <p>Email</p>
+        <input type="text" name="email" id="email" placeholder="Digite se Email"/>
+        <button id="btnEnviarDados">Enviar dados</button>
+    </div>
+    
+    <script>
+        $("#result").hide();
+    </script>
+</body>
