@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Integração - Mail2Easy PRO</title>
+    </head>
+<body>
+    <form accept-charset="UTF-8" method="post" name="formIntegration" id="formIntegration" onsubmit="return DinamizeValidateForm(this)" action="https://receiver.emkt.dinamize.com/in/303122/17/d89f8/0" target="iframeFormIntegration"> 
+        <input type="hidden" name="update_mode" value="NA"><input type="hidden" name="form-code" value="1" /><input type="hidden" id="isMsg" name="isMsg" value="true" /><div class="DinamizeDivMessageAlert" id="DinamizeDivMessageAlert" style="display: none; margin: 0px 0px 10px; color: rgb(255, 255, 255); font-size: 14px; font-family: arial; padding: 15px; background-color: #ac0000;"></div><div class="DinamizeDivMessageSuccess" id="DinamizeDivMessageSuccess" style="display: none; margin: 0px 0px 10px; color: rgb(255, 255, 255); font-size: 14px; font-family: arial; padding: 15px; background-color: rgb(20, 118, 18);">Seu e-mail foi cadastrado com sucesso!</div><div class="DinamizeDivMessageError" id="DinamizeDivMessageError" style="display: none; margin: 0px 0px 10px; color: rgb(255, 255, 255); font-size: 14px; font-family: arial; padding: 15px; background-color: #ac0000;"></div><input type="hidden" name="text-confirmation" value="U2V1IGUtbWFpbCBmb2kgY2FkYXN0cmFkbyBjb20gc3VjZXNzbyE="><input type="hidden" name="text-error" value=""><input type="hidden" name="text-alert" value=""><div class="DinamizeDivCaptchaMessage" id="DinamizeDivCaptchaMessage" style="display: none; margin: 0px 0px 10px; color: rgb(255, 255, 255); font-size: 14px; font-family: arial; padding: 15px; background-color: #ac0000;">Captcha obrigatório</div><input type="hidden" name="cmp4" value="black_friday_2019"><input type="hidden" name="phase-change" value="off"><table border="0">
+            <tr><td><label for="cmp1">E-mail</label></td></tr>
+            <tr><td class="tdValue"><input id="cmp1" name="cmp1" class="type_EMAIL field-required" type="text" value="" maxlength="80" /></td></tr>
+            <tr><td><label for="cmp2">Nome</label></td></tr>
+            <tr><td class="tdValue"><input id="cmp2" name="cmp2" class="type_VC " type="text" value="" maxlength="80" placeholder=" " /></td></tr>                        <tr><td><input type="submit" id="submit" value="Cadastre-se" /></td></tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+<style type="text/css">
+    #formIntegration *, *::before, *::after{
+        -webkit-box-sizing: border-box; /* webkit */
+        -moz-box-sizing: border-box; /* firefox */
+        box-sizing: border-box; /* css3 */
+    }
+    #formIntegration{ width: 100%; margin: 0 auto; }
+    #formIntegration table { width: 100%;}
+    #formIntegration input[type="text"]{outline:none; width: 100%; }    
+    #formIntegration select{width:100%; overflow:auto;}
+    #formIntegration select.invi-select{display:none; width:0px; height:0px; border:none;}
+    #formIntegration textarea{width:100%; height:80px; overflow:auto; resize:vertical;}
+    #formIntegration div.containerMultiple {width:100%; max-height:82px; overflow:auto; border: 1px solid #bec5cb;}
+    #formIntegration div.containerMultiple div {height: 20px; overflow: hidden;}
+    #formIntegration div.containerMultiple div input{float:left;}
+    #formIntegration div.containerMultiple div label{float:left; padding-top:2px;}
+    #formIntegration input.type_PHN_DDI{text-align:center;}
+
+    #formIntegration .type_PHN_DDI_div {width: 28%; text-align: center; margin-right: 2%!important; position: relative; float: left; }
+    #formIntegration .type_PHN_NUM_div {width: 70%; position: relative; float: left; }
+
+    
+    #formIntegration .field-error{ border-color: #CC0000 !important; }
+</style>
+<script>
+
+    function DinamizeValidateForm(form){
+
+        DinamizeLimpaAvisos();
+        var enviar = true;
+        var elem = form.elements;
+        var dateElements = new Array();
+        var floatElements = new Array();
+
+        for(var i = 0; i < elem.length; i++){
+            if( elem[i].type != "hidden" ){
+
+                var classList = elem[i].className.split(" ");
+                removeClass("field-error", elem[i]);
+                elem[i].value = elem[i].value.trim();
+                if(classList.indexOf("type_EMAIL") != -1){
+                    if(!validateEmail(elem[i].value) ){
+                        addClass("field-error", elem[i]);
+                        enviar = false;
+                    }
+                }
+                               if( classList.indexOf("field-required") != -1 ){
+                    if(classList.indexOf("type_LVM") != -1){
+                        var nameChks = elem[i].getAttribute("id");
+                        var ok = false;
+                        var checkboxes = document.getElementsByClassName("chk_"+nameChks);
+
+                        removeClass("field-error", document.getElementById("containerMultiple_"+nameChks) );
+                        if (checkboxes.length != 0){
+                            for(var j=0; j < checkboxes.length; j++){
+                                if(checkboxes[j].checked == true){
+                                    ok = true;
+                                    break;
+                                }
+                            }
+                        }
+                        if(!ok){
+                            addClass("field-error", document.getElementById("containerMultiple_"+nameChks) );
+                            enviar = false;
+                        }
+                    }else{
+                        if( elem[i].value.trim() == "" ){
+                            addClass("field-error", elem[i]);
+                            enviar = false;
+                        }
+                    }
+                }
+            }
+        }
+
+    
+        var isMsg = document.getElementById("isMsg").value;
+        if(enviar && isMsg == "true"){
+            DinamizeLoadingForm(form);
+            enviar = false;
+        }
+
+        return enviar;
+    }
+
+    function DinamizeLoadingForm(form) {
+        var elem = form.elements;
+        recaptcha = elem["g-recaptcha-response"];
+
+        
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("id", "iframeFormIntegration");
+        ifrm.setAttribute("name", "iframeFormIntegration");
+        ifrm.style.display = "none";
+        document.body.appendChild(ifrm);
+
+        if (DinamizeGetCookie('dinTrafficSource')) {
+            if (document.getElementById("__dinTrafficSource") != null) {
+                document.getElementById("__dinTrafficSource").setAttribute("value", DinamizeGetCookie('dinTrafficSource'));
+            } else {
+                var ts = document.createElement('input');
+                ts.type = 'hidden';
+                ts.name = '__dinTrafficSource';
+                ts.id = '__dinTrafficSource';
+                ts.value = DinamizeGetCookie('dinTrafficSource');
+                form.appendChild(ts);               
+            }
+        }
+        
+        var imgReq = document.createElement("img");
+        imgReq.setAttribute("id", "DinamizeImgResponse");
+
+        imgReq.src = "https://receiver.emkt.dinamize.com/in/303122/17/d89f8/0/?" + serialize(form) + "&a=" + Math.floor((Math.random()*99999)+1);
+        
+        imgReq.style.display = "none";
+        
+        document.body.appendChild(imgReq);
+
+        imgReq.onload = function () {
+            DinamizePostSuccess()
+        }
+
+        imgReq.onerror = function () {
+            document.getElementById("DinamizeDivMessageAlert").style.display = "block";
+        }
+
+            }
+
+    function DinamizeGetCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function DinamizePostSuccess() {
+        document.getElementById("DinamizeDivMessageSuccess").style.display = "block";
+        document.getElementById("formIntegration").reset();
+    }
+
+    function DinamizeLimpaAvisos() {
+        var msgAlert = document.getElementById("DinamizeDivMessageSuccess");
+        if(msgAlert) {
+            msgAlert.style.display = "none";
+        }
+
+        var msgAlert = document.getElementById("DinamizeDivMessageAlert");
+        if(msgAlert) {
+            msgAlert.style.display = "none";
+        }
+
+        var msgError = document.getElementById("DinamizeDivMessageError");
+        if(msgError) {
+            msgError.style.display = "none";
+        }
+
+        var ifrm = document.getElementById("iframeFormIntegration");
+        if(ifrm) {
+            ifrm.parentNode.removeChild(ifrm);
+        }
+
+        var img = document.getElementById("DinamizeImgResponse");
+        if(img) {
+            img.parentNode.removeChild(img);
+        }  
+
+        var msgCaptcha = document.getElementById("DinamizeDivCaptchaMessage");
+        if(msgCaptcha) {
+            msgCaptcha.style.display = "none";
+        }
+    }
+
+    function validateEmail(email) {
+    	var re = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return re.test(email);
+    }
+
+    
+   function addClass( classname, element ) {
+        var cn = element.className;
+        if( cn.indexOf( classname ) != -1 ) {
+            return;
+        }
+        if( cn != "" ) {
+            classname = " "+classname;
+        }
+        element.className = cn+classname;
+    }
+
+   function removeClass( classname, element ) {
+       var cn = element.className;                     
+	   var rxp = new RegExp( "\\s?\\b"+classname+"\\b", "g" );
+       cn = cn.replace( rxp, "" );
+       element.className = cn;
+   }
+   //função do google faz o serialize estilo JQuery
+   function serialize(form){if(!form||form.nodeName!=="FORM"){return }var i,j,q=[];for(i=form.elements.length-1;i>=0;i=i-1){if(form.elements[i].name===""){continue}switch(form.elements[i].nodeName){case"INPUT":switch(form.elements[i].type){case"text":case"hidden":case"password":case"button":case"reset":case"submit":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"checkbox":case"radio":if(form.elements[i].checked){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value))}break;case"file":break}break;case"TEXTAREA":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"SELECT":switch(form.elements[i].type){case"select-one":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"select-multiple":for(j=form.elements[i].options.length-1;j>=0;j=j-1){if(form.elements[i].options[j].selected){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].options[j].value))}}break}break;case"BUTTON":switch(form.elements[i].type){case"reset":case"submit":case"button":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break}break}}return q.join("&")};
+</script>

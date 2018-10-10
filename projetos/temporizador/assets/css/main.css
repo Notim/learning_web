@@ -1,0 +1,113 @@
+*{
+    font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+body {    
+    /* background-image: url("../img/body-background.png"); */
+    background-image: url("../img/background-with-black-box.png");    
+    background-repeat: no-repeat;                                
+    background-position: center;
+    margin: 0px auto;
+    max-width: 1790px;
+    /* background-attachment: fixed;*/
+    /* background-size: cover;*/    
+}
+#main{
+    width: 100%;
+    height: 100%;                
+}
+#black-box{
+    position: relative;
+    top: 25px;
+    width:45%;
+    /* background-color: black; */
+    margin: 0px auto;
+    padding: 35px;
+    color:#FFCC0C;
+    font-size: 1.5vw;
+}
+#black-box .black-box-header{
+    text-align: center;
+}
+#black-box .black-box-header a{
+    text-decoration: none;
+    color:#FFCC0C;
+}            
+#black-box .black-box-clock{
+    display: flex;
+}
+#black-box .black-box-clock .black-box-clock-time-block{
+    display: inline-block;
+    width: 25%;                                
+}
+#black-box .black-box-clock .black-box-clock-time-block > p{
+    text-align: center;
+}
+#black-box .black-box-text{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}            
+#black-box .form-control{
+    width: 70%;
+    margin: 0 auto;                
+}           
+#black-box .form-control{
+    width: 70%;
+    margin: 0 auto;                
+}
+#black-box .display{
+    background-color: white;
+    margin: 20px;
+    padding: 0px;
+    border-radius: 15px;                                           
+    text-align: center;    
+    color: black;
+    font-size: 5vw;
+}
+#black-box .destaque{
+    background-color: #FFCC0C;
+}
+#black-box .btnForm{
+    width: 100%;
+    border: 5px #ffbb00 solid;
+    background-color: #FFCC0C;
+    padding: 5px;
+    font-weight: bolder;
+    outline: 0;
+    margin:  0px 0px 20px 0px;
+    cursor: pointer;
+}
+#black-box .btnForm:hover{    
+    border: 5px #FF9300 solid;
+    background-color: #FFAE00;    
+}
+#black-box .txtEmail, .txtNome{
+    width: 100%;
+    margin:  0px 0px 15px 0px;
+    border:0;
+    padding: 5px;
+    border-radius: 5px;
+    outline: 0;
+}
+#black-box .lblPlace{width: 20%;}
+#black-box .txtPlace{width: 80%;}
+
+@media only screen and (max-width: 420px) {
+    #black-box{        
+        width:100%; 
+        font-size: 5vw;            
+        padding: 20px 15px 20px 15px;
+    }    
+    #black-box .form-control{width: 90%;}
+    #black-box .form-control .lblPlace{display: none}
+    #black-box .form-control .txtPlace{width: 100%;}        
+
+    #black-box .display{
+        margin: 5px;
+        padding: 0px;
+        border-radius: 1vw;
+        text-align: center;
+        color: black;
+        font-size: 13vw;
+    }               
+}
