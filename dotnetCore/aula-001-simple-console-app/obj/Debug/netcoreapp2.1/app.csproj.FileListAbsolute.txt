@@ -1,0 +1,11 @@
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/bin/Debug/netcoreapp2.1/app.deps.json
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/bin/Debug/netcoreapp2.1/app.runtimeconfig.json
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/bin/Debug/netcoreapp2.1/app.runtimeconfig.dev.json
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/bin/Debug/netcoreapp2.1/app.dll
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/bin/Debug/netcoreapp2.1/app.pdb
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/obj/Debug/netcoreapp2.1/app.csprojAssemblyReference.cache
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/obj/Debug/netcoreapp2.1/app.csproj.CoreCompileInputs.cache
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/obj/Debug/netcoreapp2.1/app.AssemblyInfoInputs.cache
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/obj/Debug/netcoreapp2.1/app.AssemblyInfo.cs
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/obj/Debug/netcoreapp2.1/app.dll
+/home/joao/Github/notim/learning_web/ASP .NET CORE/aula-001-simple-console-app/obj/Debug/netcoreapp2.1/app.pdb
