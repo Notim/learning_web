@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/UTIL/UTIL.csproj",
+    "projectUniqueName": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/UTIL/UTIL.csproj",
     "projectName": "UTIL",
-    "projectPath": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/UTIL/UTIL.csproj",
-    "outputPath": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/UTIL/obj/",
+    "projectPath": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/UTIL/UTIL.csproj",
+    "outputPath": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/UTIL/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"

@@ -21,33 +21,70 @@
     <option name="SHOW_CLOSE_PROMPT" value="true" />
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+    <treeState key="project">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c708c70-d2ec-4f5c-96cc-2c97c0a9d9f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebNetCore/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebNetCore/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebNetCore/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebNetCore/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebNetCore/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/ASP .NET CORE.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/bin/Debug/netcoreapp2.1/ASP .NET CORE.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/bin/Debug/netcoreapp2.1/ASP .NET CORE.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/bin/Debug/netcoreapp2.1/ASP .NET CORE.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/bin/Debug/netcoreapp2.1/ASP .NET CORE.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/bin/Debug/netcoreapp2.1/ASP .NET CORE.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/ASP .NET CORE.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/ASP .NET CORE.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/ASP .NET CORE.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/Debug/netcoreapp2.1/ASP .NET CORE.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/Debug/netcoreapp2.1/ASP .NET CORE.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/Debug/netcoreapp2.1/ASP .NET CORE.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/Debug/netcoreapp2.1/ASP .NET CORE.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/Debug/netcoreapp2.1/ASP .NET CORE.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/Debug/netcoreapp2.1/ASP .NET CORE.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/Debug/netcoreapp2.1/ASP .NET CORE.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/Debug/netcoreapp2.1/ASP .NET CORE.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ASP .NET CORE/Console/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEBNetCore/.idea/.idea.WEBNetCore/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEBNetCore/.idea/.idea.WEBNetCore/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebNetCore/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebNetCore/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebNetCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebNetCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/API/API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/bin/Debug/netcoreapp2.2/API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/bin/Debug/netcoreapp2.2/API.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/bin/Debug/netcoreapp2.2/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/API/bin/Debug/netcoreapp2.2/API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/bin/Debug/netcoreapp2.2/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/API/bin/Debug/netcoreapp2.2/API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/API.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/API.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp2.2/API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp2.2/API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp2.2/API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp2.2/API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp2.2/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp2.2/API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp2.2/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp2.2/API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/bin/Debug/netcoreapp2.2/BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/bin/Debug/netcoreapp2.2/BLL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/obj/BLL.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/obj/BLL.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/obj/BLL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/obj/BLL.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/obj/Debug/netcoreapp2.2/BLL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/obj/Debug/netcoreapp2.2/BLL.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/obj/Debug/netcoreapp2.2/BLL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/obj/Debug/netcoreapp2.2/BLL.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/obj/Debug/netcoreapp2.2/BLL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/obj/Debug/netcoreapp2.2/BLL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/Person/entities/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/Person/entities/Class1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/bin/Debug/netcoreapp2.2/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/bin/Debug/netcoreapp2.2/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/bin/Debug/netcoreapp2.2/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/bin/Debug/netcoreapp2.2/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/DAL.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/DAL.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/DAL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/DAL.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/Debug/netcoreapp2.2/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/bin/Debug/netcoreapp2.2/UTIL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/bin/Debug/netcoreapp2.2/UTIL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/obj/Debug/netcoreapp2.2/UTIL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/Debug/netcoreapp2.2/UTIL.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/obj/Debug/netcoreapp2.2/UTIL.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/Debug/netcoreapp2.2/UTIL.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/obj/Debug/netcoreapp2.2/UTIL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/Debug/netcoreapp2.2/UTIL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/obj/UTIL.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/UTIL.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/obj/UTIL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/UTIL.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTIL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB.System/WEB.System.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WEB.System/WEB.System.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB.System/obj/Debug/netcoreapp2.2/WEB.System.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WEB.System/obj/Debug/netcoreapp2.2/WEB.System.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB.System/obj/Debug/netcoreapp2.2/WEB.System.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WEB.System/obj/Debug/netcoreapp2.2/WEB.System.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB.System/obj/Debug/netcoreapp2.2/WEB.System.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WEB.System/obj/Debug/netcoreapp2.2/WEB.System.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB.System/obj/WEB.System.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WEB.System/obj/WEB.System.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB.System/obj/WEB.System.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/WEB.System/obj/WEB.System.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB.System/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WEB.System/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB.System/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WEB.System/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,107 +125,37 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-593052438">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="17" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BLL/Class1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding>
-                <marker date="1544194029122" expanded="true" signature="29:60" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DAL/Person/entities/Class1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <marker date="1544196119382" expanded="true" signature="67:152" ph="{...}" />
-                <marker date="1544196119382" expanded="true" signature="93:150" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UTIL/Class1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding>
-                <marker date="1544194192739" expanded="true" signature="30:61" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB.System/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-              <folding>
-                <marker date="1544195895510" expanded="true" signature="6:255" ph="..." />
-                <marker date="1544195895510" expanded="true" signature="277:677" ph="{...}" />
-                <marker date="1544195895510" expanded="true" signature="304:675" ph="{...}" />
-                <marker date="1544195895510" expanded="true" signature="358:423" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB.System/appsettings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB.System/appsettings.Development.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB.System/Startup.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-              <folding>
-                <marker date="1544194752752" expanded="false" signature="6:363" ph="..." />
-                <marker date="1544194752752" expanded="true" signature="386:1975" ph="{...}" />
-                <marker date="1544194752752" expanded="true" signature="413:1973" ph="{...}" />
-                <marker date="1544194752752" expanded="true" signature="468:522" ph="{...}" />
-                <marker date="1544194752752" expanded="true" signature="746:1178" ph="{...}" />
-                <marker date="1544194752752" expanded="true" signature="811:1075" ph="{...}" />
-                <marker date="1544194752752" expanded="true" signature="1367:1967" ph="{...}" />
-                <marker date="1544194752752" expanded="true" signature="1406:1470" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WEB.System/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WEB.System/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DAL/Person/entities/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WEB.System/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BLL/Class1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UTIL/Class1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -219,6 +186,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <autoscrollFromSource SolutionExplorer="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -227,30 +195,38 @@
           <expand>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="WebNetCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="WebNetCore" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="DAL" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="WebNetCore" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="DAL" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Person" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="WebNetCore" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="DAL" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Person" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="entities" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="data" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="data" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+              <item name="extractors" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
         </subPane>
-        <option name="show-all-files" value="true" />
+        <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
     </panes>
@@ -258,6 +234,10 @@
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -303,11 +283,13 @@
       <option name="presentableId" value="Default" />
       <updated>1544193917549</updated>
       <workItem from="1544193919264" duration="2949000" />
+      <workItem from="1544216468990" duration="316000" />
+      <workItem from="1544217109959" duration="593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2949000" />
+    <option name="totallyTimeSpent" value="3858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,22 +301,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="21" width="1368" height="710" extended-state="6" />
-    <editor active="true" />
+    <frame x="1433" y="-1" width="1368" height="770" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25757575" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" visible="true" weight="0.35121107" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32954547" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="REST Client" />
-      <window_info anchor="bottom" id="TeamCity" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32954547" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -342,17 +313,27 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.34952977" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="REST Client" order="12" weight="0.3291536" />
+      <window_info anchor="bottom" id="TeamCity" order="13" weight="0.3291536" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.3291536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -368,55 +349,28 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebNetCore/WebNetCore.csproj">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebNetCore/WebNetCore.csproj" />
+    <entry file="file://$PROJECT_DIR$/WebNetCore/Startup.cs" />
     <entry file="file://$PROJECT_DIR$/BLL/Class1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <marker date="1544194029122" expanded="true" signature="29:60" ph="{...}" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebNetCore/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/UTIL/Class1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <marker date="1544194192739" expanded="true" signature="30:61" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB.System/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <marker date="1544194752752" expanded="false" signature="6:363" ph="..." />
-            <marker date="1544194752752" expanded="true" signature="386:1975" ph="{...}" />
-            <marker date="1544194752752" expanded="true" signature="413:1973" ph="{...}" />
-            <marker date="1544194752752" expanded="true" signature="468:522" ph="{...}" />
-            <marker date="1544194752752" expanded="true" signature="746:1178" ph="{...}" />
-            <marker date="1544194752752" expanded="true" signature="811:1075" ph="{...}" />
-            <marker date="1544194752752" expanded="true" signature="1367:1967" ph="{...}" />
-            <marker date="1544194752752" expanded="true" signature="1406:1470" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB.System/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="167">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="14" />
           <folding>
-            <marker date="1544195895510" expanded="true" signature="6:255" ph="..." />
+            <marker date="1544195895510" expanded="false" signature="6:255" ph="..." />
             <marker date="1544195895510" expanded="true" signature="277:677" ph="{...}" />
             <marker date="1544195895510" expanded="true" signature="304:675" ph="{...}" />
             <marker date="1544195895510" expanded="true" signature="358:423" ph="{...}" />
@@ -427,24 +381,41 @@
     <entry file="file://$PROJECT_DIR$/WEB.System/appsettings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB.System/appsettings.Development.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DAL/Person/entities/Class1.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
           <folding>
-            <marker date="1544196119382" expanded="true" signature="67:152" ph="{...}" />
-            <marker date="1544196119382" expanded="true" signature="93:150" ph="{...}" />
+            <marker date="1544217380355" expanded="true" signature="30:107" ph="{...}" />
+            <marker date="1544217380355" expanded="true" signature="56:105" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB.System/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding>
+            <marker date="1544194752752" expanded="false" signature="6:363" ph="..." />
+            <marker date="1544194752752" expanded="true" signature="386:1975" ph="{...}" />
+            <marker date="1544194752752" expanded="true" signature="413:1973" ph="{...}" />
+            <marker date="1544194752752" expanded="true" signature="468:522" ph="{...}" />
+            <marker date="1544194752752" expanded="true" signature="746:1178" ph="{...}" />
+            <marker date="1544194752752" expanded="true" signature="811:1075" ph="{...}" />
+            <marker date="1544194752752" expanded="true" signature="1367:1967" ph="{...}" />
+            <marker date="1544194752752" expanded="true" signature="1406:1470" ph="{...}" />
           </folding>
         </state>
       </provider>

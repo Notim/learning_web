@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/API/API.csproj",
+    "projectUniqueName": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/API/API.csproj",
     "projectName": "API",
-    "projectPath": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/API/API.csproj",
-    "outputPath": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/API/obj/",
+    "projectPath": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/API/API.csproj",
+    "outputPath": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/API/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -31,11 +31,6 @@
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
-        },
-        "Microsoft.AspNetCore.Razor.Design": {
-          "suppressParent": "All",
-          "target": "Package",
-          "version": "[2.2.0, )"
         },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",

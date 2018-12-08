@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/DAL/DAL.csproj",
+    "projectUniqueName": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/DAL/DAL.csproj",
     "projectName": "DAL",
-    "projectPath": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/DAL/DAL.csproj",
-    "outputPath": "/home/joao/Github/notim/learning_web/dotnetCore/WebNetCore/DAL/obj/",
+    "projectPath": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/DAL/DAL.csproj",
+    "outputPath": "/home/joao/Github/notim/learning_web/07-notnetCore/WebNetCore/DAL/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -26,10 +26,6 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
-        "EntityFramework": {
-          "target": "Package",
-          "version": "[6.2.0, )"
-        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
