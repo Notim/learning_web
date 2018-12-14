@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-product="alura">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- Page hiding snippet (recommended)  -->
+        <style>.async-hide {
+            opacity: 0 !important
+        } </style>
+        <script>
+            (function (a, s, y, n, c, h, i, d, e) {
+                s.className += ' ' + y;
+                h.start = 1 * new Date;
+                h.end = i = function () {
+                    s.className = s.className.replace(RegExp(' ?' + y), '')
+                };
+                (a[n] = a[n] || []).hide = h;
+                setTimeout(function () {
+                    i();
+                    h.end = null
+                }, c);
+                h.timeout = c;
+            })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+                {'GTM-TN542JN': true});
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-TN542JN');
+        </script>
+        <!-- End Google Tag Manager -->
+
+
+        <script type="text/javascript">
+            dataLayer.push({
+                'tipoPagina': 'Plataforma',
+
+            });
+        </script>
+
+
+        <title>Uso do servidor IIS ou Kestrel | Alura - Cursos online de tecnologia</title>
+
+        <link rel="shortcut icon" href="/images/alura/favicon.ico">
+
+
+        <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Open+Sans:400,300,600,700,800|Source+Serif+Pro" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <link rel="stylesheet" href="/style/gnarus/base.1e88adda.css">
+
+        <link rel="stylesheet" href="/style/gnarus/block/container.d3b6e5bb.css">
+        <link rel="stylesheet" href="/style/gnarus/block/header.18cca161.css">
+        <link rel="stylesheet" href="/style/gnarus/block/headerDesktop.ae4bc343.css">
+        <link rel="stylesheet" href="/style/gnarus/block/headerNews.240698da.css">
+        <link rel="stylesheet" href="/style/gnarus/block/headerList.487e278e.css">
+        <link rel="stylesheet" href="/style/gnarus/block/headerUnlogged.601781eb.css">
+        <link rel="stylesheet" href="/style/gnarus/block/footer.cb7f2e74.css">
+        <link rel="stylesheet" href="/style/gnarus/block/checkbox.c4121c6c.css">
+        <link rel="stylesheet" href="/style/gnarus/block/paginator.1d935151.css">
+        <link rel="stylesheet" href="/style/gnarus/block/profileAvatar.c1c04ab9.css">
+        <link rel="stylesheet" href="/style/gnarus/block/contentBox.8526482e.css">
+        <link rel="stylesheet" href="/style/gnarus/block/contentBoxWithBanner.8a8b9fb2.css">
+        <link rel="stylesheet" href="/style/gnarus/block/courseLogo.c81bd6f8.css">
+        <link rel="stylesheet" href="/style/gnarus/block/courseSectionList.b0604964.css">
+        <link rel="stylesheet" href="/style/gnarus/block/button.75926226.css">
+        <link rel="stylesheet" href="/style/gnarus/block/seeMoreButton.6c6b524e.css">
+        <link rel="stylesheet" href="/style/gnarus/block/progressBar.5f3c2882.css">
+        <link rel="stylesheet" href="/style/gnarus/block/progressBall.8ec250be.css">
+        <link rel="stylesheet" href="/style/gnarus/block/showOpenAnswerExercise.35da852c.css">
+        <link rel="stylesheet" href="/style/gnarus/block/showMultipleChoiceAnswerExercise.564704cc.css">
+        <link rel="stylesheet" href="/style/gnarus/block/card.1edbe259.css">
+        <link rel="stylesheet" href="/style/gnarus/block/lightCard.b7b8ec24.css">
+        <link rel="stylesheet" href="/style/gnarus/block/cardList.ffa64785.css">
+        <link rel="stylesheet" href="/style/gnarus/block/courseCard.9ac215a3.css">
+        <link rel="stylesheet" href="/style/gnarus/block/courseCardList.d1dd5eab.css">
+        <link rel="stylesheet" href="/style/gnarus/block/courseCardBig.decfc336.css">
+        <link rel="stylesheet" href="/style/gnarus/block/courseRateCard.82aec0f5.css">
+        <link rel="stylesheet" href="/style/gnarus/block/cardCategory.8189fc09.css">
+        <link rel="stylesheet" href="/style/gnarus/block/alert.04eaa98f.css">
+        <link rel="stylesheet" href="/style/gnarus/block/careerHeader.a665c303.css">
+        <link rel="stylesheet" href="/style/gnarus/block/careerCourses.77942983.css">
+        <link rel="stylesheet" href="/style/gnarus/block/learningStepContentList.53794bca.css">
+        <link rel="stylesheet" href="/style/gnarus/block/levelMenu.7a9febf7.css">
+        <link rel="stylesheet" href="/style/gnarus/block/pointsGraphic.6be554d7.css">
+        <link rel="stylesheet" href="/style/gnarus/block/forumDiscussions.ad922358.css">
+        <link rel="stylesheet" href="/style/gnarus/block/forumList.5417ca73.css">
+        <link rel="stylesheet" href="/style/gnarus/block/forumList.5417ca73.css">
+        <link rel="stylesheet" href="/style/gnarus/block/sectionContent.6b3599b8.css">
+        <link rel="stylesheet" href="/style/gnarus/block/sectionVideo.0e311068.css">
+        <link rel="stylesheet" href="/style/gnarus/block/sectionMenu.7c67986c.css">
+        <link rel="stylesheet" href="/style/gnarus/block/elasticMedia.f91fc855.css">
+        <link rel="stylesheet" href="/style/gnarus/block/formattedText.afb4622e.css">
+        <link rel="stylesheet" href="/style/gnarus/block/exerciseContent.9bdd4215.css">
+        <link rel="stylesheet" href="/style/gnarus/block/starRating.a44d08f8.css">
+        <link rel="stylesheet" href="/style/gnarus/block/markdownEditor.4bc2327a.css">
+        <link rel="stylesheet" href="/style/gnarus/block/styledSelect.481302c9.css">
+        <link rel="stylesheet" href="/style/gnarus/block/assessment.7296cc47.css">
+        <link rel="stylesheet" href="/style/gnarus/block/audioPlayer.23b742a9.css">
+        <link rel="stylesheet" href="/style/gnarus/block/search.0f6b4f39.css">
+        <link rel="stylesheet" href="/style/gnarus/block/banner.99f79d85.css">
+        <link rel="stylesheet" href="/style/gnarus/block/bannerDetails.6daf7664.css">
+        <link rel="stylesheet" href="/style/gnarus/block/vote.57357157.css">
+        <link rel="stylesheet" href="/style/gnarus/block/form.823722d0.css">
+        <link rel="stylesheet" href="/style/gnarus/block/modal.0ab1200e.css">
+        <link rel="stylesheet" href="/style/gnarus/block/learningGuideProgresses.e12d7402.css">
+        <link rel="stylesheet" href="/style/gnarus/block/learningGuideCard.faa50021.css">
+        <link rel="stylesheet" href="/style/gnarus/block/progressTracker.bf6f8fab.css">
+        <link rel="stylesheet" href="/style/gnarus/block/courseCard.9ac215a3.css">
+
+
+        <link rel="stylesheet" href="/style/gnarus/page/discussion/topic-breadCrumb.1307628a.css">
+
+
+        <meta property="og:site_name" content="Alura">
+        <meta property="og:title" content="Uso do servidor IIS ou Kestrel | Fórum Alura">
+        <meta property="og:description"
+              content="Boa tarde, &lt;br /&gt;&lt;br /&gt;Realizei o curso e minha d&uacute;vida &eacute; referente ao servidor de hospedagem, na vers&atilde;o 2.0 do .NET CORE a classe &quot;Program.cs&quot; est&aacute; um pouco diferente:&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;```&lt;br /&gt; publ">
+        <meta property="og:image" content="https://www.alura.com.br/assets/api/share/alura-forum-share.png">
+
+        <meta name="description"
+              itemprop="description"
+              content="Boa tarde, &lt;br /&gt;&lt;br /&gt;Realizei o curso e minha d&uacute;vida &eacute; referente ao servidor de hospedagem, na vers&atilde;o 2.0 do .NET CORE a classe &quot;Program.cs&quot; est&aacute; um pouco diferente:&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;```&lt;br /&gt; publ">
+
+        <link rel="stylesheet" href="/style/gnarus/page/discussion/topic.f8d22848.css">
+        <link rel="stylesheet" href="/style/gnarus/page/discussion/topic-post.58aad5f9.css">
+        <link rel="stylesheet" href="/style/gnarus/page/discussion/topic-post-author.6cebdce3.css">
+        <link rel="stylesheet" href="/style/gnarus/page/discussion/forum-signup.4de1c0a3.css">
+        <link rel="stylesheet" href="/style/lib/prettify.4f36b4ca.css">
+
+        <script type="application/ld+json">
+        {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://cursos.alura.com.br/forum","name":"Fórum"}},{"@type":"ListItem","position":2,"item":{"@id":"https://cursos.alura.com.br/forum/categoria-programacao","name":"Programação"}},{"@type":"ListItem","position":3,"item":{"@id":"https://cursos.alura.com.br/forum/subcategoria-dotnet-para-web","name":".NET para web"}},{"@type":"ListItem","position":4,"item":{"@id":"https://cursos.alura.com.br/forum/curso-webapp-asp-net-core-parte-1","name":"ASP.NET Core parte 1"}}]}
+	
+    
+    
+    
+    
+        </script>
+
+
+    </head>
+    <body>
+
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+        <div class="natural-header" style="border-top: 4px solid #FFE000;">
+
+
+            <a href="/dashboard">
+                <img class="header-logo" src="/images/gnarus/logo-alura.svg" alt="alura" />
+            </a>
+
+
+            <div class="headerUnlogged">
+                <div class="headerUnlogged-cta">
+        <span class="headerUnlogged-cta-text">
+            Ainda não tem acesso? Estude com a gente!
+        </span>
+                    <a class="headerUnlogged-cta-button" href="https://www.alura.com.br/planos-cursos-online">Matricule-se</a>
+                </div>
+
+                <a class="headerUnlogged-login" href="/loginForm?urlAfterLogin=/forum/topico-uso-do-servidor-iis-ou-kestrel-59760">Login</a>
+            </div>
+
+        </div>
+
+
+        <style type="text/css">
+            .headerBusca {
+                background: #FFE000;
+            }
+
+            .headerBusca-form button {
+                color: #FFE000;
+            }
+
+            .headerBusca-icon {
+                border: 2px solid #FFE000;
+                background-color: #FFE000;
+            }
+        </style>
+
+        <section id="headerBusca" class="headerBusca headerBusca-desktop">
+            <div class="container">
+
+                <a href="/search" aria-label="busca" class="headerBusca-icon" role="button" aria-expanded="false" aria-controls="headerBusca-form">
+                    <svg class="headerBusca-icon-svg">
+                        <use xlink:href="/images/gnarus/header/icon-busca.svg#busca" />
+                    </svg>
+                </a>
+                <form action="/search" id="headerBusca-form" class="headerBusca-form headerBusca-form--retratil" aria-hidden="true">
+                    <label for="headerBusca-campoBusca">Qual curso procura?</label>
+                    <input type="search" class="skipKeyPress headerBusca-form-input" id="headerBusca-campoBusca" name="query" placeholder="Digite aqui a busca">
+                    <button class="headerBusca-submit" type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </section>
+
+        <header class="header headerDesktop" style="border-top: 4px solid #FFE000;">
+            <div class="container">
+                <a href="/dashboard">
+                    <img class="header-logo" src="/images/gnarus/logo-alura.svg" alt="alura">
+                </a>
+
+
+                <div class="headerUnlogged">
+                    <div class="headerUnlogged-cta">
+        <span class="headerUnlogged-cta-text">
+            Ainda não tem acesso? Estude com a gente!
+        </span>
+                        <a class="headerUnlogged-cta-button" href="https://www.alura.com.br/planos-cursos-online">Matricule-se</a>
+                    </div>
+
+                    <a class="headerUnlogged-login" href="/loginForm?urlAfterLogin=/forum/topico-uso-do-servidor-iis-ou-kestrel-59760">Login</a>
+                </div>
+
+
+            </div>
+        </header>
+
+
+        <div class="topic">
+
+
+            <section class="banner">
+                <div class="container">
+                    <h1 class="banner-title">
+
+
+                        <a href="/forum" class="banner-title-link">Fórum</a>
+
+
+                    </h1>
+                </div>
+            </section>
+
+
+            <div itemscope itemtype="http://schema.org/Question" class="topic-body">
+
+                <div class="container">
+
+
+                </div>
+
+
+                <header class="topic-header">
+                    <div class="topic-header-container">
+                        <div class="topic-header-container-info">
+                            <h1 itemprop="name" class="topic-header-container-title">
+                                Uso do servidor IIS ou Kestrel
+                            </h1>
+
+
+                            <style>
+
+
+                                @media (min-width: 720px) {
+                                    #topic-breadCrumb-item-category-59760 {
+                                        background: #00c86f;
+                                    }
+
+                                    #topic-breadCrumb-item-subcategory-59760 {
+                                        background: #00c86f;
+                                        opacity: .8;
+                                    }
+
+                                    #topic-breadCrumb-item-course-59760 {
+                                        background: #00c86f;
+                                        opacity: .6;
+                                    }
+                                }
+
+                                @media not all and (min-width: 720px) {
+                                    #topic-breadCrumb-item-category-59760 {
+                                        color: #00c86f;
+                                    }
+
+                                    #topic-breadCrumb-item-subcategory-59760 {
+                                        color: #00c86f;
+                                        opacity: .8;
+                                    }
+
+                                    #topic-breadCrumb-item-course-59760 {
+                                        color: #00c86f;
+                                        opacity: .6;
+                                    }
+                                }
+
+                            </style>
+
+                            <nav class="topic-breadCrumb">
+                                <ol class="topic-breadCrumb-list">
+
+                                    <li class="topic-breadCrumb-item">
+                                        <a id="topic-breadCrumb-item-category-59760" href="/forum/categoria-programacao" class="topic-breadCrumb-item-link">Programação</a>
+                                    </li>
+
+                                    <li class="topic-breadCrumb-item">
+                                        <a id="topic-breadCrumb-item-subcategory-59760" href="/forum/subcategoria-dotnet-para-web" class="topic-breadCrumb-item-link">.NET para web</a>
+                                    </li>
+
+                                    <li class="topic-breadCrumb-item">
+                                        <a id="topic-breadCrumb-item-course-59760" href="/forum/curso-webapp-asp-net-core-parte-1" class="topic-breadCrumb-item-link">ASP.NET Core parte 1</a>
+                                    </li>
+
+                                </ol>
+                            </nav>
+
+
+                            <p class="topic-header-relatedLinks">
+
+
+                                Referente ao curso
+                                <a href="/course/webapp-asp-net-core-parte-1">ASP.NET Core parte 1: Crie uma aplicação MVC com EF Core e Bootstrap</a>
+
+
+                            </p>
+
+
+                        </div>
+                        <div class="topic-header-container-details">
+                            <div class="topic-header-container-details-date">
+                                <time itemprop="dateCreated" datetime="18/04/2018">
+                                    18/04/2018
+                                </time>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </header>
+
+
+                <section
+
+                        class="topic-post" id="671472">
+                    <div class="container">
+
+                        <section class="topic-post-header">
+
+
+                            <section itemprop="author" itemscope itemtype="http://schema.org/Person" class="topic-post-author">
+
+
+                                <a href="/user/bruno-giorgione0"
+                                   class="topic-post-author-photo">
+                                    <img src="https://www.gravatar.com/avatar/86eec0cc9f52ab9d920391605284a1fd.png?r=PG&size=60x60&d=https%3A%2F%2Fcursos.alura.com.br%2Fimages%2Fforum%2Favatar_b.png" alt="" class="topic-post-author-photo-img" />
+                                </a>
+
+
+                                <div class="topic-post-author-details">
+
+
+                                    <a href="/user/bruno-giorgione0" itemprop="name"
+                                       class="topic-post-author-name">
+
+
+                                        Bruno Giorgione
+
+
+                                    </a>
+
+
+                                    <div class="topic-post-author-exp">(143.6k <span>xp</span>, 119 <span>posts</span>)</div>
+
+                                    <span class="topic-post-author-desc">Analista Desenvolvedor ASP.NET C#</span>
+                                </div>
+                            </section>
+
+
+                        </section>
+
+                        <section itemprop="text" class="topic-post-content">
+                            <p>Boa tarde, </p>
+                            <p>Realizei o curso e minha dúvida é referente ao servidor de hospedagem, na versão 2.0 do .NET CORE a classe &#34;Program.cs&#34; está um pouco diferente:</p>
+                            <pre class="prettyprint"><code> public class Program
+    {
+        public static void Main(string[] args)
+        {
+            BuildWebHost(args).Run();
+        }
+
+        public static IWebHost BuildWebHost(string[] args) &#61;&gt;
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup&lt;Startup&gt;()
+                .Build();
+    }</code></pre>
+                            <p>Onde nesta classe que diz qual servidor usar? Ele por default usa IIS? Como falar para a minha aplicação rodar em um servidor Linux por exemplo?</p>
+                            <p>Desde já agradeço,
+                                Obrigado</p>
+
+                        </section>
+
+                        <div class="topic-post-actions">
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="topic-answers">
+                    <div class="topic-answers-banner">
+                        <div class="container">
+                            3
+
+
+                            <span>respostas</span>
+
+
+                        </div>
+                    </div>
+
+
+                    <section
+
+                            itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer"
+
+                            class="topic-post" id="671725">
+                        <div class="container">
+
+                            <section class="topic-post-header">
+
+
+                                <section itemprop="author" itemscope itemtype="http://schema.org/Person" class="topic-post-author">
+
+
+                                    <a href="/user/mclricardo"
+                                       class="topic-post-author-photo">
+                                        <img src="https://www.gravatar.com/avatar/ff306d37f69640a16009fd10e2dd8d94.png?r=PG&size=60x60&d=https%3A%2F%2Fcursos.alura.com.br%2Fimages%2Fforum%2Favatar_m.png" alt="" class="topic-post-author-photo-img" />
+                                    </a>
+
+
+                                    <div class="topic-post-author-details">
+
+
+                                        <a href="/user/mclricardo" itemprop="name"
+                                           class="topic-post-author-name">
+
+
+                                            Marcelo Oliveira
+
+
+                                        </a>
+
+
+                                        <div class="topic-post-author-exp">(740.2k <span>xp</span>, 1414 <span>posts</span>)</div>
+
+                                        <span class="topic-post-author-moderator">Moderador</span>
+
+                                        <span class="topic-post-author-desc"></span>
+                                    </div>
+                                </section>
+
+
+                                <time itemprop="dateCreated" datetime="2018-04-19 15:49">
+                                    <span class="topic-post-date">19/04/2018</span>
+                                </time>
+
+                            </section>
+
+                            <section itemprop="text" class="topic-post-content">
+                                <p>Olá, Bruno</p>
+                                <p>Muito boa observação.</p>
+                                <p>Por padrão, a aplicação vai rodar no Linux sobre o <code>Kestrel</code>, que é o servidor HTTP &#34;in-process&#34;. Quanto a isso, você não precisa se preocupar com a classe <code>Program</code> acima, pois o Kestrel existe tanto para Windows quanto para Linux ou
+                                    MacOS.</p>
+                                <p>Só que o Kestrel vai depender de um servidor de web propriamente dito, como o Apache ou Nginx, mas isso não vimos no nosso curso da Alura. </p>
+                                <p>Neste documentos, a Microsoft explica como configurar um servidor Linux Apache para hospedar uma aplicação ASP. NET Core 2.0:</p>
+                                <p>
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/?tabs&#61;aspnetcore2x&amp;view&#61;aspnetcore-2.1" rel="nofollow">https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/?tabs&#61;aspnetcore2x&amp;view&#61;aspnetcore-2.1</a>
+                                </p>
+                                <p>
+                                    <a target="_blank" href="https://docs.microsoft.com/pt-br/aspnet/core/host-and-deploy/linux-apache?tabs&#61;aspnetcore2x" rel="nofollow">https://docs.microsoft.com/pt-br/aspnet/core/host-and-deploy/linux-apache?tabs&#61;aspnetcore2x</a>
+                                </p>
+                                <p><img src="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/_static/kestrel-to-internet2.png?view&#61;aspnetcore-2.1" alt="" /></p>
+                                <p><img src="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/_static/kestrel-to-internet.png?view&#61;aspnetcore-2.1" alt="" /></p>
+                                <p>Esse documento é suficiente pra você? Se o servidor Nginx for melhor pra você, existe este outro manual da Microsoft:</p>
+                                <p>
+                                    <a target="_blank" href="https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view&#61;aspnetcore-2.1&amp;tabs&#61;aspnetcore2x" rel="nofollow">https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view&#61;aspnetcore-2.1&amp;tabs&#61;aspnetcore2x</a>
+                                </p>
+                                <p>Qualquer dúvida, por favor nos avise!</p>
+
+                            </section>
+
+                            <div class="topic-post-actions">
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section
+
+                            itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer"
+
+                            class="topic-post" id="671860">
+                        <div class="container">
+
+                            <section class="topic-post-header">
+
+
+                                <section itemprop="author" itemscope itemtype="http://schema.org/Person" class="topic-post-author">
+
+
+                                    <a href="/user/bruno-giorgione0"
+                                       class="topic-post-author-photo">
+                                        <img src="https://www.gravatar.com/avatar/86eec0cc9f52ab9d920391605284a1fd.png?r=PG&size=60x60&d=https%3A%2F%2Fcursos.alura.com.br%2Fimages%2Fforum%2Favatar_b.png" alt="" class="topic-post-author-photo-img" />
+                                    </a>
+
+
+                                    <div class="topic-post-author-details">
+
+
+                                        <a href="/user/bruno-giorgione0" itemprop="name"
+                                           class="topic-post-author-name">
+
+
+                                            Bruno Giorgione
+
+
+                                        </a>
+
+
+                                        <div class="topic-post-author-exp">(143.6k <span>xp</span>, 119 <span>posts</span>)</div>
+
+                                        <span class="topic-post-author-desc">Analista Desenvolvedor ASP.NET C#</span>
+                                    </div>
+                                </section>
+
+
+                                <time itemprop="dateCreated" datetime="2018-04-19 22:07">
+                                    <span class="topic-post-date">19/04/2018</span>
+                                </time>
+
+                            </section>
+
+                            <section itemprop="text" class="topic-post-content">
+                                <p>Olá Marcelo,</p>
+                                <p>Obrigado pelo retorno, entendi parcialmente, quando executamos a aplicação local, ele utiliza o IIS Express. No momento que eu for hospedar em produção, posso hospedar normalmente no IIS ou preciso de uma configuração extra?</p>
+
+                            </section>
+
+                            <div class="topic-post-actions">
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section
+
+                            itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer"
+
+                            class="topic-post" id="671941">
+                        <div class="container">
+
+                            <section class="topic-post-header">
+
+
+                                <section itemprop="author" itemscope itemtype="http://schema.org/Person" class="topic-post-author">
+
+
+                                    <a href="/user/mclricardo"
+                                       class="topic-post-author-photo">
+                                        <img src="https://www.gravatar.com/avatar/ff306d37f69640a16009fd10e2dd8d94.png?r=PG&size=60x60&d=https%3A%2F%2Fcursos.alura.com.br%2Fimages%2Fforum%2Favatar_m.png" alt="" class="topic-post-author-photo-img" />
+                                    </a>
+
+
+                                    <div class="topic-post-author-details">
+
+
+                                        <a href="/user/mclricardo" itemprop="name"
+                                           class="topic-post-author-name">
+
+
+                                            Marcelo Oliveira
+
+
+                                        </a>
+
+
+                                        <div class="topic-post-author-exp">(740.2k <span>xp</span>, 1414 <span>posts</span>)</div>
+
+                                        <span class="topic-post-author-moderator">Moderador</span>
+
+                                        <span class="topic-post-author-desc"></span>
+                                    </div>
+                                </section>
+
+
+                                <time itemprop="dateCreated" datetime="2018-04-20 11:38">
+                                    <span class="topic-post-date">20/04/2018</span>
+                                </time>
+
+                            </section>
+
+                            <section itemprop="text" class="topic-post-content">
+                                <p>Olá, Bruno</p>
+                                <p>Sim, pode hospedar normalmente. O IIS no servidor de produção irá rotear a chamada para a porta 80 (HTTP) ou 443 (HTTPS) para uma porta qualquer do localhost que é gerenciada pelo Kestrel.</p>
+                                <p>Por exemplo:</p>
+                                <p>No IIS:</p>
+                                <pre class="prettyprint"><code>http://www.meusite.com.br:80
+ou
+https://www.meusite.com.br:443</code></pre>
+                                <p>Vão ser roteados para o Kestrel para:</p>
+                                <pre class="prettyprint"><code>http://localhost:1234 (ou outra porta qualquer)</code></pre>
+                                <p>Então com o IIS no servidor de produção você não precisa modificar a aplicação ASP.NET Core para ela funcionar como já funciona na sua máquina de desenvolvimento. Mas aproveitando a oportunidade, a recomendação para o ambiente de produção, claro, é <strong>compilar
+                                    seu código
+                                    fonte como Release e não Debug</strong>.</p>
+
+                            </section>
+
+                            <div class="topic-post-actions">
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                </section>
+
+
+            </div>
+        </div>
+
+
+        <div class="signup-now">
+            <section class="forum-signup">
+                <div class="container forum-signup-banner">
+			<span class="forum-signup-message">
+				Quer interagir no fórum  e ter acesso a centenas de cursos?
+			</span>
+                    <a class="forum-signup-button" href="https://www.alura.com.br/planos-cursos-online">Matricule-se</a>
+                </div>
+            </section>
+        </div>
+
+
+        <footer class="footer container">
+            <a href="/dashboard" class="footer-logo">
+                <img src="/images/gnarus/logo-alura.svg" alt="alura">
+            </a>
+
+            <ul class="footer-menu">
+
+                <li class="footer-menu-item">
+                    <a class="footer-menu-item-link" href="https://www.alura.com.br/sobre" target="">Sobre a Alura</a>
+                </li>
+
+                <li class="footer-menu-item">
+                    <a class="footer-menu-item-link" href="http://suporte.alura.com.br/" target="_blank">Dúvidas frequentes</a>
+                </li>
+
+                <li class="footer-menu-item">
+                    <a class="footer-menu-item-link" href="https://docs.google.com/forms/d/e/1FAIpQLScwKyaSvuFXK9SmMJoLPuYAS2qD_XAAnZPxMZij9qVeflbhBg/viewform" target="_blank">Sugira um curso</a>
+                </li>
+
+                <li class="footer-menu-item">
+                    <a class="footer-menu-item-link" href="https://trello.com/b/kredhcFj/alura-alunos-funcionalidades" target="_blank">Sugira uma funcionalidade</a>
+                </li>
+
+                <li class="footer-menu-item">
+                    <a class="footer-menu-item-link" href="http://blog.alura.com.br/" target="_blank">Blog da Alura</a>
+                </li>
+
+            </ul>
+
+            <section role="presentation" class="footer-footerGroup">
+
+                <div class="footer-links">
+                    <h2 class="footer-links-title">Acompanhe-nos</h2>
+                    <ul role="presentation" class="footer-socialMedia">
+
+                        <li class="footer-socialMedia-item">
+                            <a class="footer-socialMedia-item-link" href="https://www.youtube.com/user/aluracursosonline" target="_blank" title="Youtube da Alura">
+                                <svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-youtube">
+                                    <use xlink:href="/images/icons-redes-hipster.svg#icon-footer-youtube" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="footer-socialMedia-item">
+                            <a class="footer-socialMedia-item-link" href="https://www.facebook.com/AluraCursosOnline/" target="_blank" title="Facebook da Alura">
+                                <svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-facebook">
+                                    <use xlink:href="/images/icons-redes-hipster.svg#icon-footer-facebook" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="footer-socialMedia-item">
+                            <a class="footer-socialMedia-item-link" href="https://twitter.com/aluraonline" target="_blank" title="Twitter da Alura">
+                                <svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-twitter">
+                                    <use xlink:href="/images/icons-redes-hipster.svg#icon-footer-twitter" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="footer-socialMedia-item">
+                            <a class="footer-socialMedia-item-link" href="http://hipsters.tech/" target="_blank" title="Podcast Hipsters Ponto Tech">
+                                <svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-hipsters">
+                                    <use xlink:href="/images/icons-redes-hipster.svg#icon-footer-hipsters" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="footer-socialMedia-item">
+                            <a class="footer-socialMedia-item-link" href="https://instagram.com/aluraonline" target="_blank" title="Instagram da Alura">
+                                <svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-instagram">
+                                    <use xlink:href="/images/icons-redes-hipster.svg#icon-footer-instagram" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="footer-links">
+                    <h2 class="footer-links-title">Apps</h2>
+                    <ul class="footer-hotLinks-menu footer-hotLinks-mobile">
+
+                        <li class="footer-hotLinks-item">
+                            <a class="footer-hotLinks-item-link" href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR" target="_blank" title="Google Play Store">
+                                <svg class="footer-hotLinks-item-icon footer-hotLinks-menu-item-mobile">
+                                    <use xlink:href="/images/icons-mobile.svg#icon-footer-googlePlay" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="footer-hotLinks-item">
+                            <a class="footer-hotLinks-item-link" href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" target="_blank" title="Apple App Store">
+                                <svg class="footer-hotLinks-item-icon footer-hotLinks-menu-item-mobile">
+                                    <use xlink:href="/images/icons-mobile.svg#icon-footer-appStore" />
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </section>
+        </footer>
+
+
+        <script src="/script/lib/jquery2/jquery-2.1.3.min.32015dd4.js"></script>
+        <script src="/script/gnarus/block/buttonToggle.1c952a31.js" async></script>
+        <script src="/script/gnarus/block/sectionMenu.9c6d35d8.js" async></script>
+
+        <script src="/script/lib/marked.min.a2851798.js"></script>
+        <script src="/script/gnarus/block/markdownEditor.4b03bd09.js" async></script>
+        <script src="/script/gnarus/block/caret.df98f577.js" async></script>
+        <script src="/script/gnarus/dashboard/search.e7c5f3e1.js" async></script>
+        <script src="/script/gnarus/dashboard/news.6ec1d0c7.js" async></script>
+
+        <script src="/script/gnarus/block/preventsMultipleInteractions.ccefe158.js" async></script>
+        <script src="/script/gnarus/block/assessment.050f656f.js" async></script>
+        <script src="/script/gnarus/block/login-form.20124546.js" async></script>
+        <script src="/script/gnarus/block/menuToggle.cbb82247.js" async></script>
+        <script src="/script/gnarus/block/headerToggle.ab54ce2d.js" async></script>
+        <script src="/script/gnarus/header/responsiveHeaderToggle.c72455fb.js" async></script>
+        <script src="/script/gnarus/Bookmark.67f5b5d7.js"></script>
+        <script src="/script/gnarus/dashboard/categoryExplorerCarousel.7b81018a.js" async></script>
+        <script src="/script/gnarus/classPage/aria.1c51db86.js" async></script>
+
+        <script>
+            new Bookmark().refreshListener();
+        </script>
+
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-42101548-1', 'alura.com.br');
+
+
+            ga('require', 'displayfeatures');
+
+            ga('send', 'pageview');
+
+
+        </script>
+
+
+        <script src="/js/prettify.min.49a10a85.js" async></script>
+        <script src="/js/gnarus/topic.92b53ceb.js" async></script>
+        <script src="/js/gnarus/submitCtrlEnter.4c78b69c.js" async></script>
+        <script src="/js/gnarus/closeTopicAlert.46136403.js" async></script>
+        <script src="/js/gnarus/keydownWatchers.f20680cd.js" async></script>
+
+
+    </body>
+</html>
+
+
