@@ -1,5 +1,43 @@
-Olá, essa é uma pasta que contém todos os exercícios praticados ensinados no curso da udemy de desenvolvimento WEB.
- Recomendo o curso que é ministrado pelo Jorge Sant Ana, desenvolvedor bastante experiente no desenvolvimento de websites.
+Vou dar dicas de programas que eu uso e recomendo.
 
-link do curso:
-https://www.udemy.com/web-completo/learn/v4/overview 
+Proxy:
+Uso o mais popular que é o Tor Onion, mas existem outros como I2P usado para baixar coisas ilícitas e o JondoFox que é bastante rápido.
+
+VPN:
+Recomendo usar a OpenVPN, onde você baixa os IPs no site http://www.vpngate.net/en/ que tem mais de 6000+ IPs de 240 países, incluindo do Brasil.
+
+Existem outras como CyberGhost, Hotspot Schield e ZenMate como extensão do navegador Chrome e Mozilla, mas recomendo a OpenVPN que é melhor e rápida.
+
+Sistema Operacional:
+Recomendo usar o Linux (qualquer um que não seja o Ubuntu), se for Windows, usar a versão 7 evitando as mais recentes, pois graças a telemetria das novas versões, o seu SO é monitorado.
+
+Para driblar a telemetria, eu recomendo usar o Spybot Anti Beacon.
+
+Eu também uso o anti-vírus Comodo que já vem o Sandbox incluído, o site Virus Total é muito bom também para checar arquivos, para evitar de ser rastreado eu uso o PeerBlock e DNSCrypt.
+
+É muito importante você desabilitar o Ipv6 e manter o Firewall ativo na maior prioridade, também uso extensões como Adblock e Https Everywhere no Mozilla e Chromium.
+
+Se você usar o computador emprestado de outra pessoa ou acessar Lan House, instale o Tails no seu pendrive que já vem o Tor embutido, se você quiser emular Android, use a Virtualbox e abra o programa Whonix.
+
+A Virtualbox também emula todas as versões do Windows, Linux e Mac.
+
+Também recomendo usar o Qubes se quiser organizar o seu Desktop, e caso queira atualizar o seu Android, usar o CyanogenMod.
+
+No Windows é essencial você criptografar o seu HD com VeraCrypt, coloque uma senha acima de 30 dígitos com caracteres maiúsculos, minúsculos, espaço e caracteres especiais, sempre que você upar algo ilegal, upe no Sendspace que é um host temporário que você pode apagar, e coloque senha na pasta zipada do Winrar.
+
+Também é essencial você fazer Backup de seus arquivos na nuvem, recomendo upar no MEGA.
+
+Caso você instale o Linux, não há necessidade de usar o VeraCrypt pois o Kernel já é eficiente para isso, para checar as vulnerabilidades de seu IP, acesse estes ambos sites:
+
+http://ip-check.info/?lang=en
+http://www.ipleak.com/full-report/
+
+Programas bons para acelerar o computador que eu uso é o Ccleaner (que tem a opção de limpar arquivos deletados no modo DOD ou Gutmann) além do Advanced SystemCare que acelera o seu computador.
+
+Para checar a saúde do seu HD use o programa Hard Disk Sentinel, e se ele estiver danificado, use o HDD Regenerator.
+
+Há outros programas bons como Drive Booster que atualiza automaticamente todos os seus Drivers, e o Smart Defrag que desfragmenta de forma mais completa e rápida o seu computador, inclusive há a opção de desfragmentar na hora do Boot toda vez que você liga o seu computador.
+
+Para baixar arquivos Torrents, eu recomendo os sites do TPB, RARBG e 1337x e evitem usar o Utorrent, escolha o Deluge ou o qBittorrent que possuem a opção de conexão criptografada.
+
+Essas são as dicas básicas e fundamentais, espero que pessoas entendidas do assunto contribuam para essa Thread, e quem tiver dúvidas, perguntem para que eu tire todas elas.
