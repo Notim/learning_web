@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body { background-color:#333; color:#fff;}
+    </style>
+  </head>
+  <body></body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="jquery.confetti.js"></script>  
+  <!--<script src="http://files.khelfstore.com.br/customLibs/confetti-js/jquery.confetti.js"></script>-->  
+  <!--<script src="https://www.jqueryscript.net/demo/Confetti-Animation-jQuery-Canvas-Confetti-js/jquery.confetti.js"></script>-->
+  
+  <script type="text/javascript">
+    window.onload = () => {
+        var body = document.body,
+        html = document.documentElement;
+
+        var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );     
+
+        jQuery.confetti.start(null, height, "cir")
+
+        var canvas = document.getElementById('confettiCanvas')
+
+        canvas.addEventListener(
+          'click',
+          jQuery.confetti.stop, 
+          false
+        )
+    };
+  </script>
+</html>
