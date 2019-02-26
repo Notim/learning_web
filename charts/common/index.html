@@ -12,10 +12,10 @@
         var canvas = document.getElementById("canvas-grafico");
         
         if (canvas) {
-            var height = 200; //altura da canvas            
-            var width = 1000; //largura da canvas
-            var x = 0; // posição horizontal inicial do gráfico            
-            var valor; //valor dos pontos do gráfico, que será alterado aleatoriamente           
+            var height = 200;   // altura da canvas            
+            var width = 1000;   // largura da canvas
+            var x = 0;          // posição horizontal inicial do gráfico            
+            var valor;          // valor dos pontos do gráfico, que será alterado aleatoriamente           
             
             canvas.setAttribute("width", width);
             canvas.setAttribute("height", height);           
@@ -23,10 +23,25 @@
             var ctx = canvas.getContext("2d"); //obtendo o contexto 2d
             
             ctx.fillStyle = "lime";
-            ctx.fillRect(0, 0, largura, altura);
+            ctx.fillRect(0, 0, width, height);
             ctx.font = "30px Courier";
+            
+            function desenharGrafico() {        
+                x += 5;        
+                valor = parseInt(Math.random() * 100);          
+                ctx.lineTo(x, height - valor);
+                ctx.stroke();        
+                ctx.fillStyle = "lime";
+                ctx.fillRect(0, 0, largura, 30);        
+                ctx.fillStyle = "red";
+                ctx.fillText(valor, x, 30);
+            }
+
+            setInterval(desenharGrafico, 100);
         }
     };
+    
+
 </script>
 </html>
 
