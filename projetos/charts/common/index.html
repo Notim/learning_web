@@ -10,38 +10,48 @@
 <script>    
     window.onload = () => {
         var canvas = document.getElementById("canvas-grafico");
+        var ctx = canvas.getContext("2d"); //obtendo o contexto 2d
         
-        if (canvas) {
-            var height = 200;   // altura da canvas            
-            var width = 1000;   // largura da canvas
-            var x = 0;          // posição horizontal inicial do gráfico            
-            var valor;          // valor dos pontos do gráfico, que será alterado aleatoriamente           
-            
-            canvas.setAttribute("width", width);
-            canvas.setAttribute("height", height);           
-            
-            var ctx = canvas.getContext("2d"); //obtendo o contexto 2d
-            
-            ctx.fillStyle = "lime";
-            ctx.fillRect(0, 0, width, height);
-            ctx.font = "30px Courier";
-            
-            function desenharGrafico() {        
-                x += 5;        
-                valor = parseInt(Math.random() * 100);          
-                ctx.lineTo(x, height - valor);
-                ctx.stroke();        
-                ctx.fillStyle = "lime";
-                ctx.fillRect(0, 0, largura, 30);        
-                ctx.fillStyle = "red";
-                ctx.fillText(valor, x, 30);
+        var height = 1000; // altura da canvas            
+        var width  = 1500; // largura da canvas
+        var x      = 500;  // posição horizontal inicial do gráfico            
+        var y;             // valor dos pontos do gráfico, que será alterado aleatoriamente           
+        var prop   = 15;
+
+        canvas.setAttribute("width", width);
+        canvas.setAttribute("height", height);           
+        
+        ctx.fillStyle = "lime";
+        ctx.fillRect(0, 0, width, width);
+        // ctx.font = "30px Courier";
+        // ctx.scale(2, 2)
+        
+        let writeLine = (expr) => {
+            for (var xa = 0; xa <= width; xa = xa + 0.3) {
+                y = expr(xa)
+                draw(xa, y)
+                console.log(xa + "," +y)
             }
-
-            setInterval(desenharGrafico, 100);
         }
-    };
-    
 
+        let draw = (linx, liny) => {
+            ctx.lineTo(linx * prop, (height - (liny * prop)));
+            
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "blue";
+            ctx.stroke();
+
+            ctx.font = "10px Arial";
+            ctx.fillStyle = "red";
+            ctx.fillText("("+Math.round(linx*100)/100+","+ Math.round(liny*100)/100 +")", linx * prop, (height - (liny * prop)));
+        }
+
+        writeLine(t => (Math.cos(t) * 20) + (300 / prop))
+        writeLine(t => (Math.tan(t) * 20) + (300 / prop))
+        writeLine( b => b * b )
+        writeLine(c => (3 * (c * c)) + (1 * c) + 1)
+
+    };
 </script>
 </html>
 
